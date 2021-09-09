@@ -293,13 +293,13 @@ module.exports = class ElectronicBilling extends AfipWebService {
 	 *
 	 * @return array Request parameters  
 	 **/
-	async getWSInitialRequest(operation)
+	async getWSInitialRequest(operation, tokenAuth)
 	{
 		if (operation === 'FEDummy') {
 			return {};
 		}
 
-		const { token, sign } = await this.afip.GetServiceTA('wsfe');
+		const { token, sign } = tokenAuth;
 
 		return {
 			'Auth' : { 

@@ -40,9 +40,9 @@ module.exports = class RegisterScopeThirteen extends AfipWebService {
 	 * if it exists, returns idPersona property of response {@see 
 	 * WS Specification item 3.2.2}
 	 **/
-	async getTaxpayerDetails(identifier) {
+	async getTaxpayerDetails(identifier, tokenAuth) {
 		// Get token and sign
-		let { token, sign } = await this.afip.GetServiceTA('ws_sr_padron_a13');
+		let { token, sign } = tokenAuth;
 
 		// Prepare SOAP params
 		let params = {
@@ -64,9 +64,9 @@ module.exports = class RegisterScopeThirteen extends AfipWebService {
 	 * @return object|null if taxpayer does not exists, return null,  
 	 * if it exists, returns idPersona property of response
 	 **/
-	async getTaxIDByDocument(documentNumber) {
+	async getTaxIDByDocument(documentNumber, tokenAuth) {
 		// Get token and sign
-		let { token, sign } = await this.afip.GetServiceTA('ws_sr_padron_a13');
+		let { token, sign } = tokenAuth;
 
 		// Prepare SOAP params
 		let params = {

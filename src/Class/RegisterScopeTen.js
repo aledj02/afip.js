@@ -40,9 +40,9 @@ module.exports = class RegisterScopeTen extends AfipWebService {
 	 * if it exists, returns full response {@see 
 	 * WS Specification item 3.2.2}
 	 **/
-	async getTaxpayerDetails(identifier) {
+	async getTaxpayerDetails(identifier, tokenAuth) {
 		// Get token and sign
-		let { token, sign } = await this.afip.GetServiceTA('ws_sr_padron_a10');
+		let { token, sign } = tokenAuth;
 
 		// Prepare SOAP params
 		let params = {

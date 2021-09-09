@@ -1,14 +1,14 @@
 {
   "name": "@aledj02/afip.js",
-  "version": "0.7.1",
-  "description": "Libreria para usar los Web Services de AFIP con JavaScript",
+  "version": "0.8.1",
+  "description": "Libreria para usar los Web Services de AFIP con JavaScript Fork de @afipsdk/afip.js",
   "main": "src/Afip.js",
   "scripts": {
     "test": "echo \"No test specified\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AfipSDK/afip.js"
+    "url": "git+https://github.com/aledj02/afip.js"
   },
   "keywords": [
     "web-service",
@@ -19,9 +19,9 @@
   "author": "AfipSDK <afipsdk@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AfipSDK/afip.js/issues"
+    "url": "https://github.com/aledj02/afip.js/issues"
   },
-  "homepage": "https://github.com/AfipSDK/afip.js#readme",
+  "homepage": "https://github.com/aledj02/afip.js#readme",
   "dependencies": {
     "node-forge": "^0.10.0",
     "soap": "^0.24.0",
