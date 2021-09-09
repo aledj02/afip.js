@@ -1,18 +1,11 @@
-<!-- PROJECT SHIELDS -->
-[![NPM][npm-shield]](https://www.npmjs.com/package/@aledj02/afip.js)
-[![Contributors][contributors-shield]](https://github.com/afipsdk/afip.js/graphs/contributors)
-[![Closed issues][issues-shield]](https://github.com/afipsdk/afip.js/issues)
-[![License][license-shield]](https://github.com/afipsdk/afip.js/blob/master/LICENSE)
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h3 align="center">Este es un fork de @afipsdk/afip.js</h3>
   <a href="https://github.com/afipsdk/afip.js">
     <img src="https://github.com/afipsdk/afipsdk.github.io/blob/master/images/logo-colored.png" alt="Afip.js" width="130" height="130">
   </a>
-
-  <h3 align="center">Afip.js</h3>
+  <h3 align="center">Este es un fork de @afipsdk/afip.js</h3>
 
   <p align="center">
     Necesitaba aislar los certificados digitales de AFIP del código, por eso hicimos el fork. Los certificados
